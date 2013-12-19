@@ -1,6 +1,5 @@
 
 
-
 OOP2
 #The attr_accessor method creates both getter, setter methods and their instance variables.
 #Ruby enables you to create class constants. These constants do not belong to a concrete object. They belong to the class. By convention, constants are written in uppercase letters.
@@ -110,3 +109,8 @@ A language is dynamically typed if the type of a variable is interpreted at runt
 Most scripting languages have this feature as there is no compiler to do static typechecking anyway, but you may find yourself searching for a bug that is due to the interpreter misinterpreting the type of a variable. Luckily, scripts tend to be small so bugs have not so many places to hide.
 
 Most dynamically typed languages do allow you to provide type information, but do not require it. One language that is currently being developed (Rascal) takes a hybrid approach allowing dynamic typing within functions but enforcing static typing for the function signature.
+
+-------------------------------------------
+Notes from Review:
+The output of the example confirms that in Ruby language, public, protected, private methods and private member fields are inherited by child objects from their parents.
+
