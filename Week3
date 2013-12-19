@@ -1,0 +1,151 @@
+To Look Up:
+Symbol and String in Ruby (Pure) Vs Sinatra
+
+
+More search on when to use POST or GET?
+http://www.diffen.com/difference/Get_vs_Post
+
+Post has larger payload
+
+Statelessnes nature of HTTP?
+http://www.webopedia.com/TERM/S/stateless.html
+
+
+HTTP
+Request
+Components
+- HTTP VERB/METHOD
+- URL
+- PARAMETER
+
+Response
+Components
+-Status Code
+-Payload
+
+Stateless
+-Important Concept in Web Development
+
+HTTP Client/Tool
+-Response
+-curl
+
+Render
+erb: embedded ruby
+You have to render templates instead of responding with html
+
+Cookies has a limit of 4KB
+Use with the term Session!
+
+Saving Multiple Decks might be a problem with Cookies could be a problem.
+1 Deck of Card: 52 Cards
+
+
+----
+Chat Session
+
+What is gems in RubyOnRails?
+gemfiles
+bundler
+
+----
+For Blog
+Look at Modern Web Development Tools
+REST
+SOAP
+minified 
+String interpolation
+Double Quotes vs Single Quotes
+before do
+helpers do
+look for each with index do
+the advantages of MVC over others?
+write about the halt method
+
+----------
+blackjack web app
+
+first page
+1st iteration:
+set name
+--> redirect to game play
+game
+--> User cards
+--> dealer cards
+--> print them out in array form
+
+check score greater than 21 or at 21
+
+button for hit or play
+game hit/?
+if hit
+--> page refresh or reload??
+
+game stay/?
+elsif stay
+--> check if dealer has less than 17
+--> hit button for dealer (or make it automatic)
+
+check who has gotten more?
+declare winner
+
+what is thin web server?
+
+
+
+
+Play again
+-----------
+Intial Game Set UP
+Set Name
+Money With you
+--
+Make A Bet for this Round (Minus this from the amount you bring over)
+--> If you run out of money, you can borrow money with negative cash 
+--> If more than negative 1000, you lose out and get killed. 
+--> 
+
+--- Different Button Colors
+
+/welcome
+/placebet
+/game <-- redirect multiple times with hit or stay until the game ends
+/game <-- when the game ends, have a message says the results 
+/playagain <-- you can choose to play again after each round
+/gameover <-- you are out of money or you say no
+
+
+
+
+Improvements:
+
+-> End Game needs to reset all the values
+-> Better way to handle play again and reset features!
+-> Better GUI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

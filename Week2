@@ -1,0 +1,112 @@
+
+
+
+OOP2
+#The attr_accessor method creates both getter, setter methods and their instance variables.
+#Ruby enables you to create class constants. These constants do not belong to a concrete object. They belong to the class. By convention, constants are written in uppercase letters.
+
+#We access the PI constant using the :: operator.
+#In Ruby there is only a slight distinction between an operator and a method.
+
+#Ruby methods can be divided into class methods and instance methods. 
+#Class methods are called on a class. 
+#They cannot be called on an instance of a class.
+#Class methods cannot access instance variables.
+
+#Methods that start with a self keyword are class methods
+
+#In general, polymorphism is the ability to appear in different forms. 
+#Technically, it is the ability to redefine methods for derived classes. 
+#Polymorphism is concerned with the application of specific implementations to an interface or a more generic base class.
+
+#In dynamically typed languages we concentrate on the fact that methods with the same name do different things.
+
+#Modules:Modules are similar to classes with a few differences. Modules cannot have instances and cannot subclasses.
+#Modules are used to group related classes, methods and constants can be put into separate modules. 
+#This also prevents name clashes, because modules encapsulate the objects they contain. 
+#In this regard, Ruby modules are similar to C# namespaces and Java packages.
+
+#include Math
+#puts PI
+#puts sin 2
+#If we include a module in our script, we can refer to the Math objects directly, omitting the Math name. 
+#Modules are added to a script using the include keyword.
+
+In a single script, we cannot define two animal classes. They would clash. Putting them in different modules we solve the issue.
+
+#Exceptions
+Exceptions are objects that signal deviations from the normal flow of program execution. Exceptions are raised, thrown or initiated.
+
+Exceptions are objects. They are descendants of a built-in Exception class. Exception objects carry information about the exception. 
+Its type (the exception’s class name), an optional descriptive string, and optional traceback information. 
+Programs may subclass Exception, or more often StandardError, to obtain custom Exception objects that provide additional information about operational anomalies.
+
+Code Example:
+#!/usr/bin/ruby
+
+x = 35
+y = 0
+
+begin
+    z = x / y
+    puts z
+rescue => e
+    puts e
+    p e
+end
+
+
+---------------------------------
+Class Discussion & Such
+
+Chris & Zarni on Self: Lecture Video 2, Week 2
+
+In the session, you set up
+
+def update_info (name)
+      self.name = name
+end
+
+Tim (or Terry) and I asked whether we could use @ instead of self and you said yes.
+And then, you mentioned that accessing the instance variable directly is not sanitized.
+You were saying we should use self.name over @name in this update_info method.
+It is because self.name will call on def name setter which we set up with attr_accessor.
+
+Correct me if I am wrong!
+
+Thanks a lot.
+Have a great day,
+Zarni
+
+
+
+
+
+---------------------------------
+
+Topics for Week 2 Blog
+1. Abstraction
+2. Encapsulation
+3. Inheritence
+4. Polymorphism
+
+
+---------------------------------
+Name Spacing & Such
+
+Resolve to Keep Learning
+One of the main purposes of modules is to separate methods and constants into named spaces. This is called (conveniently enough) namespacing, and it's how Ruby doesn't confuse Math::PI and Circle::PI.
+
+See that double colon we just used? That's called the scope resolution operator, which is a fancy way of saying it tells Ruby where you're looking for a specific bit of code. If we say Math::PI, Ruby knows to look inside the Math module to get that PI, not any other PI (such as the one we created in Circle).
+
+---------------------------------
+#Static Type Vs Dynamic Type
+A language is statically typed if the type of a variable is known at compile time. This in practice means that you as the programmer must specify what type each variable is. Example: Java, C, C++
+
+The main advantage here is that all kinds of checking can be done by the compiler, and therefore a lot of stupid bugs are caught at a very early stage.
+
+A language is dynamically typed if the type of a variable is interpreted at runtime. This means that you as a programmer can write a little quicker because you do not have to specify type everytime. Example: Perl
+
+Most scripting languages have this feature as there is no compiler to do static typechecking anyway, but you may find yourself searching for a bug that is due to the interpreter misinterpreting the type of a variable. Luckily, scripts tend to be small so bugs have not so many places to hide.
+
+Most dynamically typed languages do allow you to provide type information, but do not require it. One language that is currently being developed (Rascal) takes a hybrid approach allowing dynamic typing within functions but enforcing static typing for the function signature.

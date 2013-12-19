@@ -1,0 +1,57 @@
+Use your time in Blocks.
+Give a Block of time to get the Zone effect.
+
+DOM
+Document Object Model
+
+Class  Vs Id in CSS
+
+Ask Chris : What is href#?
+It is an anchor tag and do not go anywhere.
+return false do not take me to the top of the page
+
+Change the javascript file --> refresh again 
+
+
+For handling a huge amount of Javascript
+Backbone
+Ember
+Coffee Script∂
+
+
+Blog
+Talk about document.ready(function)
+Anonymous function: A function without a name
+Distinguish between event handlers and methods in JQuery
+Semicolons are important.
+Put the "" for every DOM element selector
+
+jquery.ajax
+$.ajax
+Documentation:
+http://api.jquery.com/jQuery.ajax/
+
+
+CDN
+http://en.wikipedia.org/wiki/Content_delivery_network
+
+
+Heroku:
+Review Heroku and git deployment!
+toolbet
+heroku keys:add ~/.ssh/id_rsa.pub needed to deploy it to Heroku
+
+
+
+Deployment:
+DevOps Job..
+Security, Firewall etc
+
+Ruby:
+
+Review on Ruby Exception Handling 
+
+
+Question:
+
+Are we doing AngularJS?

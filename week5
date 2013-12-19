@@ -1,0 +1,132 @@
+Questions:
+
+
+A smart hacker might get access to user names and passwords in a database by simply inserting " or ""=" into the user name or password text box.
+
+The code at the server will create a valid SQL statement like this:
+
+Result
+
+SELECT * FROM Users WHERE Name ="" or ""="" AND Pass ="" or ""=""
+The result SQL is valid. It will return all rows from the table Users, since WHERE ""="" is always true.
+
+I am not sure what this is all about.
+
+
+SQL Injection important.
+
+---------------------------------------
+
+What does bundle install do and where did it get all the dependencies from?
+What the hell is the show action from?
+---------------------------------------
+It is in the controller that the info is collected and not at the view.
+---------------------------------------
+
+Blog:
+
+What is RESTful API and Architecture?
+---------------------------------------
+Questions on Rails:
+
+From the Rails guide!
+
+In this example, the posts_path helper is passed to the :url option. What Rails will do with this is that it will point the form to the create action of the current controller, the PostsController, and will send a POST request to that route.
+
+the current controller, the PostsController (I am guessing it is the posts controller that we are talking about here!)
+
+class CreatePosts < ActiveRecord::Migration
+
+  def change
+    create_table :posts do |t|
+      t.string :title
+      t.text :text
+ 
+      t.timestamps
+    end
+  end
+end
+
+I don't see any two timestamps. I only see one. Does it happen if you update the database table each time?
+So it's going to call the change method?
+
+******************
+Still thoroughly confused with posts_path & new_posts_path business here.
+-----------------------------------------
+Notes on Rails Models:
+
+Models in Rails use a singular name, and their corresponding database tables use a plural name. 
+Active Record is smart enough to automatically map column names to model attributes, which means you don't have to declare attributes inside Rails models, as that will be done automatically by Active Record.
+
+The method: :patch opton tells Rails that we want this form to be sumitted via the PATCH HTTP method 
+which is the HTTP method you are expected to use to update resources according to the REST protocol.
+
+-----------------------------------------
+Read Later
+
+On Strong parameters, permission issues!
+
+http://weblog.rubyonrails.org/2012/3/21/strong-parameters/
+
+
+/Users/zarnihtet/Desktop/TeaLeaf/Weekly Projects/Week5/blog/config/routes.rb:14: syntax error, unexpected ':', expecting keyword_end # get 'products/:id' => 'catalog#view' ^ /Users/zarnihtet/Desktop/TeaLeaf/Weekly Projects/Week5/blog/config/routes.rb:14: syntax error, unexpected tIDENTIFIER, expecting keyword_end # get 'products/:id' => 'catalog#view' ^
+-----------------------------------------
+db migrate questions:
+How to modify migration issues?
+
+bundle --> pulling down the gem files from the internet
+database.yaml file
+
+
+yaml is a complicated hash
+
+MEMORIZE
+
+rake routes
+/rails/info
+
+Is it the same for everything else?
+Write it down on white board.
+
+Active Record: Object Relational Mapper
+
+----------------------------------------
+Rails For Small Projects:
+I thought Twitter is built on this.
+
+Mass assignments.
+Write it.
+Know it.
+Use it.
+
+
+To DO:
+Look at Comments
+Look at Chat Video
+Do the Challenges
+Maybe up to 7.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
