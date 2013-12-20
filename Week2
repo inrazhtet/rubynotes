@@ -1,5 +1,4 @@
 
-
 OOP2
 #The attr_accessor method creates both getter, setter methods and their instance variables.
 #Ruby enables you to create class constants. These constants do not belong to a concrete object. They belong to the class. By convention, constants are written in uppercase letters.
@@ -113,4 +112,16 @@ Most dynamically typed languages do allow you to provide type information, but d
 -------------------------------------------
 Notes from Review:
 The output of the example confirms that in Ruby language, public, protected, private methods and private member fields are inherited by child objects from their parents.
+
+Methods that start with a self keyword are class methods.
+def self.info
+    "This is a Circle class" 
+end
+
+Instance methods do not start with the self keyword.
+
+p Circle.info
+We call a class method. Note that we call the method on a class name.
+
+
 
